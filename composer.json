@@ -27,14 +27,15 @@
         "phpunit/phpunit": "^5.7.26",
         "symfony/phpunit-bridge": "^3.2"
     },
-    "extra": {
-        "contao-manager-plugin": "Acme\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
-    },
     "autoload": {
         "psr-4": {
             "Contao\\SkeletonBundle\\": "src/"
         }
     },
+    "extra": {
+        "contao-manager-plugin": "Acme\\ContaoHelloWorldBundle\\ContaoManager\\Plugin"
+    },
+
     "autoload-dev": {
         "psr-4": {
             "Acme\\ContaoHelloWorldBundle\\Tests\\": "tests/"
