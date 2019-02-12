@@ -71,7 +71,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../contao-hello-world-bundle/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="352">
               <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
             </state>
           </provider>
@@ -307,7 +307,7 @@
       <option name="presentableId" value="Default" />
       <updated>1549972740992</updated>
       <workItem from="1549972742396" duration="837000" />
-      <workItem from="1549976398322" duration="7099000" />
+      <workItem from="1549976398322" duration="7513000" />
     </task>
     <task id="LOCAL-00001" summary="Updated requirements">
       <created>1549981774984</created>
@@ -320,7 +320,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7936000" />
+    <option name="totallyTimeSpent" value="8350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,7 +469,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../contao-hello-world-bundle/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="352">
           <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
         </state>
       </provider>
