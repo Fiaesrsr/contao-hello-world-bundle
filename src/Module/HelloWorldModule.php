@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: srogacki
- * Date: 12.02.2019
- * Time: 16:51
- */
 
 namespace Acme\ContaoHelloWorldBundle\Module;
 
@@ -22,10 +16,10 @@ class HelloWorldModule extends \Module
      */
     public function generate()
     {
-        if (TL_MODE == "BE"){
+        if (TL_MODE == 'BE') {
             $template = new \BackendTemplate('be_wildcard');
 
-            $template->wildcard = '### '.mb_strtoupper($GLOBALS['TL_LANG']['FMD']['helloWorld'][0]).' ###';
+            $template->wildcard = '### '.utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['helloWorld'][0]).' ###';
             $template->title = $this->headline;
             $template->id = $this->id;
             $template->link = $this->name;
@@ -33,13 +27,19 @@ class HelloWorldModule extends \Module
 
             return $template->parse();
         }
+
         return parent::generate();
     }
+
     /**
      * Generates the module.
      */
     protected function compile()
     {
-        $this->Template->message = 'Hello World';
+        $messageGenerator = \Contao\System::getContainer()->get('acme.contao_hello_world_bundle.message_generator');
+
+        $message = $messageGenerator->sayHelloTo('World');
+
+        $this->Template->message = $message;
     }
 }

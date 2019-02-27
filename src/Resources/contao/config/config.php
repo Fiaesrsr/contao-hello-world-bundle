@@ -1,9 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: srogacki
- * Date: 12.02.2019
- * Time: 17:06
- */
 
-$GLOBALS['FE_MOD']['miscellaneous']['helloWorld'] = 'Acme\ContaoHelloWorldBundle\Module\HelloWorldModule';
+// Frontend modules
+$GLOBALS['FE_MOD']['DELOS IT']['helloWorld'] = 'Acme\ContaoHelloWorldBundle\Module\HelloWorldModule';
+
+// Als Inhaltselement
+

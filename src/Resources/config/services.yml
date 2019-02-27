@@ -7,3 +7,7 @@ services:
         Symfony\Component\DependencyInjection\ContainerAwareInterface:
             calls:
                 - ["setContainer", ["@service_container"]]
+
+    acme.contao_hello_world_bundle.message_generator:
+        class: Acme\ContaoHelloWorldBundle\Library\MessageGenerator
+        public: true

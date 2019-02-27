@@ -6,3 +6,5 @@
  * Time: 17:07
  */
 $GLOBALS['TL_LANG']['FMD']['helloWorld'] = ['Hello World', 'Gibt den Text "Hello World" aus'];
+
+
