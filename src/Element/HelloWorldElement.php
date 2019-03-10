@@ -1,13 +1,13 @@
 <?php
 
-namespace Acme\ContaoHelloWorldBundle\Module;
+namespace Acme\ContaoHelloWorldBundle\Element;
 
-class HelloWorldModule extends \Module
+class HelloWorldElement extends \ContentElement
 {
     /**
      * @var string
      */
-    protected $strTemplate = 'mod_helloWorld';
+    protected $strTemplate = 'ce_helloWorld';
     
 
     /**
@@ -20,11 +20,10 @@ class HelloWorldModule extends \Module
         if (TL_MODE == 'BE') {
             $template = new \BackendTemplate('be_wildcard');
 
-            $template->wildcard = '### '.utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['helloWorld'][0]).' ###';
+            $template->wildcard = '### '.utf8_strtoupper($GLOBALS['TL_LANG']['CTE']['helloWorld'][0]).' ###';
             $template->title = $this->headline;
             $template->id = $this->id;
             $template->link = $this->name;
-            $template->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id='.$this->id;
 
             return $template->parse();
         }
